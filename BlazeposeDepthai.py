@@ -91,7 +91,7 @@ class BlazeposeDepthai:
         self.presence_threshold = 0.5
         self.visibility_threshold = 0.5
 
-        self.device = cv2.VideoCapture(0)
+        self.device = dai.Device(0)
         self.xyz = False
         
         if input_src == None or input_src == "rgb" or input_src == "rgb_laconic":
